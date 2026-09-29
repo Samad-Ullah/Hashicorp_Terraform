@@ -1,0 +1,27 @@
+# Provider binaries and module caches - large, machine-specific, re-created by `terraform init`
+**/.terraform/*
+
+# State: can contain secrets in plain text, and is not source code
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files commonly hold credentials
+*.tfvars
+*.tfvars.json
+
+# CLI config that may contain tokens
+.terraformrc
+terraform.rc
+
+# Local overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Files produced by the local_file examples
+**/hello.txt
