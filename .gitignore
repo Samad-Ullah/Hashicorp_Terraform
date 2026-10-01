@@ -23,9 +23,11 @@ override.tf.json
 *_override.tf
 *_override.tf.json
 
+
 # Files produced by the local_file examples
 **/hello.txt
-
-**/hello.txt
 **/config/
-**/tfplan
+
+# Saved plan files can contain secrets
+*.tfplan
+tfplan

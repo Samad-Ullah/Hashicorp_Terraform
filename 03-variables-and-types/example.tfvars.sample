@@ -1,0 +1,33 @@
+environment = "dev"
+
+app_name = "shopcart"
+
+replicas = 2
+
+enable_debug = true
+
+allowed_ips = [
+  "10.0.0.1",
+  "10.0.0.2"
+]
+
+availability_zones = [
+  "a",
+  "b"
+]
+
+feature_flags = {
+  new_ui    = true
+  payments  = false
+  analytics = true
+}
+
+maintenance_window = ["sun", 3]
+
+database = {
+  engine  = "postgres"
+  version = "16"
+}
+
+# Replace this with a real password in your local tfvars file.
+db_password = "CHANGE_ME"
