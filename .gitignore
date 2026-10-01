@@ -25,3 +25,7 @@ override.tf.json
 
 # Files produced by the local_file examples
 **/hello.txt
+
+**/hello.txt
+**/config/
+**/tfplan
