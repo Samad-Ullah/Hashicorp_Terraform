@@ -1,0 +1,8 @@
+error_log /var/log/nginx/error.log ${log_level};
+%{ if !is_prod ~}
+# DEBUG MODE
+%{ endif ~}
+
+%{ for s in services ~}
+upstream ${s.name} { server 127.0.0.1:${s.port}; }
+%{ endfor ~}
