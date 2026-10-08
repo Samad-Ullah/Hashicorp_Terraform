@@ -19,7 +19,7 @@ variable "port" {
   }
 }
 
-variable "db_host" {
+variable "database_host" {
   type        = string
   description = "It is description getting from parent module"
 }

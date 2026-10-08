@@ -6,6 +6,6 @@ resource "local_file" "this" {
 SERVICE=${var.name}
 ENV=${var.environment}
 PORT=${var.port}
-DB_HOST=${var.db_host}
+DB_HOST=${var.database_host}
 EOT
 }
