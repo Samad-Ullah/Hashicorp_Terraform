@@ -18,3 +18,8 @@ resource "random_pet" "legacy" {}
 output "pet" {
   value = random_pet.legacy.id
 }
+
+
+output "greeting" {
+  value = "Hello from ${random_pet.legacy.id}!"
+}
